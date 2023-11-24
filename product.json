@@ -36,7 +36,6 @@
   },
   {
     "name": "khan",
-    "price": 2,
     "feature": true,
     "rating": 4,
     "company": "huawei"

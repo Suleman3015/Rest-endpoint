@@ -1,16 +1,18 @@
-const mongoose = require("mongoose");
+
 const Products = require("../model/product")
 
 const getAllProducts = async (req,res)=>{
-    let page = Number(req.query.page) || 2
-    let limit = Number(req.query.limit) || 3
-    let skip = (page - 1) * limit;
+    const {page,limit} = req.query;
+    let endpoint = Products.find({})
+    if(page){
+        let pagePag = Number(page) || 1
+        let limitPag = Number(limit) || 3
+        let skip = (pagePag - 1) * limitPag;
+        endpoint = endpoint.skip(skip).limit(limitPag);
+    }
 
 
-
-
-
-    const allProduct = await Products.find({}).skip(skip).limit(limit);
+    const allProduct = await endpoint 
     res.status(200).json({allProduct})
 }
 
