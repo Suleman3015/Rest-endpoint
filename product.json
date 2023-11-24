@@ -1,0 +1,45 @@
+[
+  {
+    "name": "suleman",
+    "price": 4,
+    "feature": true,
+    "rating": 4,
+    "company": "samsung"
+  },
+  {
+    "name": "Waleed ",
+    "price": 3,
+    "feature": true,
+    "rating": 4,
+    "company": "apple"
+  },
+  {
+    "name": "Bilal",
+    "price": 125,
+    "feature": true,
+    "rating": 4,
+    "company": "huawei"
+  },
+  {
+    "name": "ahmed",
+    "price": 8,
+    "feature": true,
+    "rating": 4,
+    "company": "samsung"
+  },
+  {
+    "name": "bushra ",
+    "price": 1,
+    "feature": true,
+    "rating": 4,
+    "company": "apple"
+  },
+  {
+    "name": "khan",
+    "price": 2,
+    "feature": true,
+    "rating": 4,
+    "company": "huawei"
+  }
+
+]
